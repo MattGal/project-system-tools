@@ -428,8 +428,8 @@ function LocateVisualStudio([object]$vsRequirements = $null){
     return $null
   }
 
-  # use first matching instance
-  return $vsInfo[0]
+  # pretend we found nothing
+  return $null
 }
 
 function InitializeBuildTool() {
